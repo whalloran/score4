@@ -44,7 +44,7 @@ body {
 	z-index: 200;
 	cursor: pointer;
 	border: none;
-    font-family: 'Wendy One', sans-serif;
+    font-family: 'Wendy One', sans-serif, serif;
     font-size: 25px;
 }
 
@@ -161,5 +161,10 @@ circle {
 
 #play-again:hover {
     color: blue;
+}
+
+#controls {
+    margin-top: 180px;
+    font-family: 'Arial', sans-serif, serif;
 }
 

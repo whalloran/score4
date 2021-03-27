@@ -91,7 +91,7 @@ checkForWin(target){
     const owner = target.token.owner;
     let win = false;
 
-    // vertical
+    // Check for vertical win
     for (let x = 0; x < this.board.columns; x++ ){
         for (let y = 0; y < this.board.rows - 3; y++){
             if (this.board.spaces[x][y].owner === owner && 
@@ -103,7 +103,7 @@ checkForWin(target){
         }
     }
 
-    // horizontal
+    // Check for horizontal win
     for (let x = 0; x < this.board.columns - 3; x++ ){
         for (let y = 0; y < this.board.rows; y++){
             if (this.board.spaces[x][y].owner === owner && 
@@ -115,7 +115,7 @@ checkForWin(target){
         }
     }
 
-    // diagonal
+    // Check for diagonal win
     for (let x = 3; x < this.board.columns; x++ ){
         for (let y = 0; y < this.board.rows - 3; y++){
             if (this.board.spaces[x][y].owner === owner && 
@@ -127,7 +127,7 @@ checkForWin(target){
         }
     }
 
-    // diagonal
+    // Check for diagonal win
     for (let x = 3; x < this.board.columns; x++ ){
         for (let y = 3; y < this.board.rows; y++){
             if (this.board.spaces[x][y].owner === owner && 
